@@ -11,13 +11,14 @@ ON Booking.user_id = User.user_id;
 SELECT *
 FROM Property
 LEFT JOIN Review
-ON Property.property_id = Review.property_id;
+ON Property.property_id = Review.property_id
+ORDER BY Property.name ASC;
 
 -- Perfrom Full Outer Join
 SELECT *
 FROM User
 LEFT JOIN Booking
-ON User.user_id = Booking.user_id;
+ON User.user_id = Booking.user_id
 
 UNION
 
