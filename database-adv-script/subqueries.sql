@@ -9,7 +9,8 @@
  WHERE (
     SELECT property_id
     FROM Review
-    WHERE rating > 4.0
+    GROUP BY property_id
+    HAVING AVG(rating) > 4.0
  );
 
  -- A correlated subquery to find users who have made more than 3 bookings
