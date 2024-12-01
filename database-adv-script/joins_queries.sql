@@ -17,7 +17,7 @@ ON Property.property_id = Review.property_id;
 SELECT *
 FROM User
 LEFT JOIN Booking
-ON User.user_id = Booking.user_id
+ON User.user_id = Booking.user_id;
 
 UNION
 
