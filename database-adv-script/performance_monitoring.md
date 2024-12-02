@@ -44,14 +44,15 @@ After identifying the optimizations:
 ```markdown
 Database Performance Report
 
-## **Initial Analysis**
-- **Query**: `SELECT * FROM Booking WHERE start_date BETWEEN '2024-01-01' AND '2024-12-31';`
-- **Execution Time**: 2.5 seconds.
-- **Issues Identified**:
+Initial Analysis
+- Query: `SELECT * FROM Booking WHERE start_date BETWEEN '2024-01-01' AND '2024-12-31';`
+- Execution Time: 2.5 seconds.
+- Issues Identified:
   - Full table scan due to missing index on `start_date`.
 
-## **Optimizations Applied**
+Optimizations Applied
 1. Added an index on `start_date`:
    ```sql
    CREATE INDEX idx_booking_start_date ON Booking(start_date);
+```
 ```
