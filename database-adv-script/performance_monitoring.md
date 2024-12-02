@@ -40,8 +40,9 @@ After identifying the optimizations:
 
 ## **Step 5: Report Improvements**
 **Report Example**
+
 ```markdown
-# **Database Performance Report**
+Database Performance Report
 
 ## **Initial Analysis**
 - **Query**: `SELECT * FROM Booking WHERE start_date BETWEEN '2024-01-01' AND '2024-12-31';`
