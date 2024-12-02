@@ -52,7 +52,5 @@ Initial Analysis
 
 Optimizations Applied
 1. Added an index on `start_date`:
-   ```sql
-   CREATE INDEX idx_booking_start_date ON Booking(start_date);
-```
+   `CREATE INDEX idx_booking_start_date ON Booking(start_date);`
 ```
